@@ -1,59 +1,47 @@
-# NOIR — Adult Video Discovery Demo
+# DeveloperForge
 
-A React + TypeScript + Tailwind CSS portfolio project using the Eporner API v2 and the Pornhub Webmasters API (proxied through `/api/pornhub`).
+A local-first collection of essential developer utilities built with React, TypeScript, Vite, Tailwind CSS, React Router, Lucide React, Prettier, Marked, and DOMPurify.
 
 ## Features
 
-- 18+ age confirmation screen (a basic UI gate, not legal age verification)
-- Live API catalog, search, sorting and pagination
-- Responsive video cards with thumbnails, duration, views and rating
-- Third-party embed modal and source links
-- Favorites persisted in `localStorage`
-- Loading skeletons, empty states and API error handling
-- Black & Orange angular interface (#070707, #FF6A00, #F2F2F2)
-- English / Russian interface; the chosen language is stored in `localStorage` (`noir-lang-v1`)
-- Settings page: language, theme (dark / light / system), thumbnail blur, tile images on/off, default sorting, clearing history / favorites / cached covers (`noir-settings-v1`)
-- 60+ categories and 55+ actresses (Russian input like «блондинки» is mapped to the English search query)
-- Categories tab, watch page with related videos, mobile drawer navigation and search suggestions
+- JSON formatter, minifier, and validator
+- JSON to TypeScript interface generator
+- UTF-8-safe Base64 encoder/decoder
+- URL component encoder/decoder
+- JWT header/payload decoder (does not verify signatures)
+- UUID v4 generator
+- SHA-1 / SHA-256 / SHA-384 / SHA-512 hash generator
+- Regular-expression tester with flags and match positions
+- HTML and CSS formatter/minifier
+- JavaScript formatter powered by Prettier
+- Sanitized Markdown preview
+- HTML entity encoder/decoder
+- HEX / RGB / RGBA / HSL / HSLA color converter
+- Unix timestamp and date converter
+- Global search, favorites, recent tools, responsive sidebar, light/dark theme
 
-## Requirements
+## Getting started
 
-- Node.js 20.19+ or 22.12+ recommended
-- npm
-
-## Run locally
+Requirements: Node.js 20+ recommended.
 
 ```bash
 npm install
 npm run dev
 ```
 
-Open the local URL printed by Vite.
-
-## Build
+Build for production:
 
 ```bash
 npm run build
 npm run preview
 ```
 
-## API
+## Privacy
 
-The app calls the documented Eporner API v2 endpoint:
+Tools run locally in the browser. No backend, account, or paid API is used. Theme, favorites, and recent tool identifiers are stored in localStorage; tool input is not persisted. Markdown output is sanitized before rendering. User-provided JavaScript and HTML are never executed.
 
-`https://www.eporner.com/api/v2/video/search/`
+## Notes
 
-The API documentation demonstrates `query`, `per_page`, `page`, `thumbsize`, `order`, `gay`, `lq`, and `format` parameters. See [official documentation](https://www.eporner.com/api/v2/).
-
-**Important:** a direct browser request may fail if the API changes its CORS policy or limits requests. If that happens, add a small server-side proxy (for example, a Vercel Function) and have the frontend call your own endpoint. Do not expose private API credentials in `VITE_*` variables.
-
-## Content and compliance
-
-This is an educational portfolio demo. Third-party content is controlled by its source provider. Check the provider's terms, content licensing, embed permissions, local law, and hosting provider policies before public deployment. The age confirmation screen is not a substitute for legal age verification. Do not redistribute downloaded media or bypass access controls.
-
-## Suggested first commit
-
-```bash
-git add .
-git commit -m "feat: build NOIR adult video discovery catalog"
-```
+- JWT decoding is not signature verification or authentication.
+- Hashing is not encryption; SHA-1 is offered for compatibility only.
+- Regex execution includes basic safeguards, but avoid testing complex expressions from untrusted sources.

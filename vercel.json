@@ -1,6 +1,0 @@
-{
-  "regions": ["fra1"],
-  "rewrites": [
-    { "source": "/api/eporner/:path*", "destination": "https://www.eporner.com/api/v2/:path*" }
-  ]
-}
