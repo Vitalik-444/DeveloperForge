@@ -1,4 +1,4 @@
-import { Braces, Code2, LockKeyhole, WandSparkles, Type, Globe, FileCode2, Palette, Clock3, Hash, Regex, Fingerprint, FileJson, Link2, ScanText, Binary } from 'lucide-react';
+import { Braces, Code2, LockKeyhole, WandSparkles, Type, Globe, FileCode2, Palette, Clock3, Hash, Regex, Fingerprint, FileJson, Link2, ScanText, Binary, CaseSensitive, LetterText } from 'lucide-react';
 export const tools = [
 {id:'json-formatter',name:'JSON Formatter & Validator',category:'JSON Tools',description:'Format, minify, and validate JSON data.',keywords:'pretty print parse object',icon:Braces,popular:true},
 {id:'json-to-typescript',name:'JSON to TypeScript',category:'JSON Tools',description:'Generate typed interfaces from JSON.',keywords:'interface types type generator',icon:FileJson,popular:true},
@@ -14,6 +14,8 @@ export const tools = [
 {id:'markdown-preview',name:'Markdown Preview',category:'Text Utilities',description:'Write Markdown with a live rendered preview.',keywords:'md readme editor',icon:Type},
 {id:'html-entities',name:'HTML Entity Encoder & Decoder',category:'Encoders & Decoders',description:'Encode and decode HTML-sensitive characters.',keywords:'entities escape unescape',icon:ScanText},
 {id:'color-converter',name:'Color Converter',category:'Web Utilities',description:'Convert HEX, RGB, and HSL color values.',keywords:'colour picker rgba hsla',icon:Palette},
-{id:'timestamp-converter',name:'Timestamp Converter',category:'Web Utilities',description:'Convert Unix timestamps and dates.',keywords:'epoch unix date time',icon:Clock3}
+{id:'timestamp-converter',name:'Timestamp Converter',category:'Web Utilities',description:'Convert Unix timestamps and dates.',keywords:'epoch unix date time',icon:Clock3},
+{id:'case-converter',name:'Case Converter',category:'Text Utilities',description:'Convert text to camelCase, snake_case, kebab-case and more.',keywords:'camel snake kebab pascal upper lower title constant',icon:CaseSensitive},
+{id:'text-counter',name:'Text Counter',category:'Text Utilities',description:'Count characters, words, lines and UTF-8 bytes.',keywords:'length words characters lines statistics reading time',icon:LetterText}
 ];
 export const categories = ['JSON Tools','Code Tools','Encoders & Decoders','Generators','Text Utilities','Web Utilities'];

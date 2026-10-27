@@ -4,7 +4,7 @@ A local-first collection of essential developer utilities built with React, Type
 
 ## Features
 
-- JSON formatter, minifier, and validator
+- JSON formatter, minifier, key sorter, and validator
 - JSON to TypeScript interface generator
 - UTF-8-safe Base64 encoder/decoder
 - URL component encoder/decoder
@@ -18,7 +18,9 @@ A local-first collection of essential developer utilities built with React, Type
 - HTML entity encoder/decoder
 - HEX / RGB / RGBA / HSL / HSLA color converter
 - Unix timestamp and date converter
-- Global search, favorites, recent tools, responsive sidebar, light/dark theme
+- Case converter (camel, Pascal, snake, kebab, CONSTANT, Title)
+- Text counter (characters, words, lines, UTF-8 bytes, reading time)
+- Global search (Ctrl/⌘ + K), favorites, recent tools, responsive sidebar, light/dark theme
 
 ## Getting started
 
