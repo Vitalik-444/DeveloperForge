@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/DeveloperForge.iml" filepath="$PROJECT_DIR$/.idea/DeveloperForge.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/noir-adult-catalog.iml" filepath="$PROJECT_DIR$/.idea/noir-adult-catalog.iml" />
     </modules>
   </component>
 </project>
